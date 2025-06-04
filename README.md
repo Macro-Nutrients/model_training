@@ -19,9 +19,14 @@ This repository contains a deep learning model for food image classification as 
     ├── models/              # Saved model files
     │   ├── saved_model.keras
     │   ├── saved_model/     # TensorFlow SavedModel format
-    │   └── tflite/          # TensorFlow Lite model
-    │       ├── label.txt
-    │       └── model_tf.tflite
+    │   ├── tflite/          # TensorFlow Lite model
+    │   │   ├── label.txt
+    │   │   └── model_tf.tflite
+    │   └── tfjs_model/
+    │       ├── group1-shard1of3.bin
+    │       ├── group1-shard2of3.bin
+    |       ├── group1-shard1of3.bin
+    │       └── model.json   # TensorFlow Js model
     ├── splitted_dataset/    # Training, validation and test datasets
     ├── confusionmatrix_plt.png  # Evaluation visualization
     └── model_evaluation_plt.png # Model performance visualization
@@ -40,7 +45,7 @@ The dataset consists of food images collected from multiple Kaggle sources:
 - [Fast Food Classification Dataset - V2 | 20k Images](https://www.kaggle.com/datasets/utkarshsaxenadn/fast-food-classification-dataset)
 
 Subsequently, the researcher performed sorting and cropping on each image using an image processing application to ensure that only high-quality images were used for training. The finalized dataset was then uploaded to Google Drive and can be accessed via the following link:
-- [Final Dataset](https://drive.google.com/file/d/1WSKVHCrDwPnqFau175P5ehI-h4Glog1o/view?usp=sharing)
+- [Final Dataset](https://drive.google.com/file/d/1xJUvyVfqBZrm1UE9AjKral8OdWAqmCGG/view?usp=sharing)
 
 
 The data was split as follows:
@@ -79,7 +84,7 @@ jupyter notebook inference.ipynb
 The model achieved high accuracy in classifying the five food categories. Detailed evaluation metrics and visualizations are available in the training notebook and the report document.
 
 ## Deployment
-The model has been converted to TensorFlow Lite format for mobile deployment. The TFLite model and corresponding label file are available in the tflite directory.
+The model has been converted to TensorFlow Lite format for mobile deployment, and TensorFlow Js for web deployment. The TFLite model and corresponding label file are available in the tflite directory. The model also has b
 
 ## Project Documentation
 For a comprehensive explanation of the project (in Indonesian), please see the detailed report.

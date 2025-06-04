@@ -19,7 +19,7 @@ Kemudian, peneliti memilih dari **5 kelas** dari dataset tersebut, yaitu :
 - **mie_goreng**
 
 Setelah itu, peneliti melakukan pemilahan dan cropping pada setiap gambar pada aplikasi pengolahan gambar, memastikan gambar yang akan dilatih adalah berkualitas. Dataset final diupload pada Google Drive dan diakses melalui link berikut :
-- https://drive.google.com/file/d/1WSKVHCrDwPnqFau175P5ehI-h4Glog1o/view?usp=sharing
+- https://drive.google.com/file/d/1xJUvyVfqBZrm1UE9AjKral8OdWAqmCGG/view?usp=sharing
 
 Setiap kelas berisi gambar makanan sesuai nama kelasnya. Berdasarkan eksplorasi data, distribusi gambar pada setiap kelas **seimbang**. Jumlah total gambar dihitung menggunakan fungsi `count_images`, dan distribusi gambar per kelas divisualisasikan menggunakan grafik batang. Contoh gambar dari setiap kelas juga ditampilkan untuk memastikan kualitas dan keberagaman data.
 
@@ -88,7 +88,7 @@ Model yang digunakan berbasis **transfer learning** dengan arsitektur sebagai be
 
 # 5. **Hasil Pelatihan dan Evaluasi**
 ## **Hasil Pelatihan**
-- **Epoch Berhenti:** Pelatihan berhenti pada **epoch ke-8** karena callback **EarlyStopping** mendeteksi tidak ada peningkatan pada `val_loss` selama 5 epoch berturut-turut.
+- **Epoch Berhenti:** Pelatihan berhenti pada **epoch ke-8 (epoch 7)** karena callback **EarlyStopping** mendeteksi tidak ada peningkatan pada `val_loss` selama 5 epoch berturut-turut.
 - **Akurasi dan Loss pada Epoch Akhir:**
   - **Training Accuracy:** 99.5%
   - **Validation Accuracy:** 98.2%
@@ -96,7 +96,7 @@ Model yang digunakan berbasis **transfer learning** dengan arsitektur sebagai be
   - **Validation Loss:** 0.045
 
 ## **Learning Curve**
-Grafik akurasi dan loss menunjukkan bahwa model berhasil belajar dengan baik tanpa overfitting.
+Grafik akurasi dan loss menunjukkan bahwa model berhasil belajar dengan baik tanpa overfitting. Titik merah adalah saat early stop dipanggil, yaitu pada epoch ke-3 (epoch 2)
 
 ## **Confusion Matrix**
 Matriks kebingungan divisualisasikan menggunakan heatmap. Berikut adalah hasil prediksi pada data testing:
@@ -124,8 +124,8 @@ Hasil ini menunjukkan bahwa model mampu mengenali gambar dengan sangat baik.
 
 # 6. **Ekspor dan Konversi Model**
 - Model diekspor ke format `.keras` dan SavedModel.
-- Model dikonversi ke format TensorFlow Lite (`.tflite`) untuk deployment di perangkat mobile.
-- Label kelas disimpan dalam file `label.txt`.
+- Model dikonversi ke format TensorFlow Lite (`.tflite`) untuk deployment di perangkat mobile. Label kelas disimpan dalam file `label.txt`.
+- Model juga dikonversi ke tfjs (Tensorflow Js) untuk deployment ke aplikasi web.
 
 ---
 
