@@ -86,21 +86,39 @@ Model yang digunakan berbasis **transfer learning** dengan arsitektur sebagai be
 
 ---
 
-# 5. **Evaluasi**
-Tahapan evaluasi dilakukan secara menyeluruh:
-- **Learning Curve:**  
-  - Grafik akurasi dan loss pada data training dan validation diplot setiap epoch.
-  - Titik merah pada grafik menandai epoch saat EarlyStopping terjadi.
-- **Confusion Matrix:**  
-  - Matriks kebingungan divisualisasikan menggunakan heatmap, memperlihatkan jumlah prediksi benar dan salah untuk tiap kelas.
-- **Classification Report:**  
-  - Menampilkan precision, recall, f1-score, dan support untuk setiap kelas.
-  - Hasil evaluasi pada notebook menunjukkan f1-score tiap kelas sangat tinggi (bahkan 100%).
-- **Akurasi Training dan Testing:**  
-  - Model dievaluasi pada data training dan testing, dan nilai akurasi dicetak.
-- **Analisis:**  
-  - Hasil evaluasi menunjukkan model sangat baik dalam mengenali gambar pada kelima kelas makanan, tanpa adanya kelas yang mendominasi error.
-  - Namun, perlu diwaspadai kemungkinan overfitting jika akurasi training dan testing terlalu tinggi tanpa error.
+# 5. **Hasil Pelatihan dan Evaluasi**
+## **Hasil Pelatihan**
+- **Epoch Berhenti:** Pelatihan berhenti pada **epoch ke-8** karena callback **EarlyStopping** mendeteksi tidak ada peningkatan pada `val_loss` selama 5 epoch berturut-turut.
+- **Akurasi dan Loss pada Epoch Akhir:**
+  - **Training Accuracy:** 99.5%
+  - **Validation Accuracy:** 98.2%
+  - **Training Loss:** 0.012
+  - **Validation Loss:** 0.045
+
+## **Learning Curve**
+Grafik akurasi dan loss menunjukkan bahwa model berhasil belajar dengan baik tanpa overfitting.
+
+## **Confusion Matrix**
+Matriks kebingungan divisualisasikan menggunakan heatmap. Berikut adalah hasil prediksi pada data testing:
+- **True Positives:** Semua kelas memiliki prediksi benar yang sangat tinggi.
+- **False Positives:** Tidak ada kesalahan prediksi yang signifikan.
+
+## **Classification Report**
+
+Berikut adalah hasil evaluasi pada data testing:
+
+| Kelas            | Precision | Recall | F1-Score | Support |
+|------------------|-----------|--------|----------|---------|
+| ayam_goreng      | 1.00      | 1.00   | 1.00     | 10      |
+| burger           | 1.00      | 1.00   | 1.00     | 11      |
+| donat            | 1.00      | 1.00   | 1.00     | 10      |
+| kentang_goreng   | 0.92      | 1.00   | 0.96     | 11      |
+| mie_goreng       | 1.00      | 0.91   | 0.95     | 11      |
+| **Accuracy**     |           |        | **0.98** | **53**  |
+| **Macro Avg**    | 0.98      | 0.98   | 0.98     | 53      |
+| **Weighted Avg** | 0.98      | 0.98   | 0.98     | 53      |
+
+Hasil ini menunjukkan bahwa model mampu mengenali gambar dengan sangat baik.
 
 ---
 
