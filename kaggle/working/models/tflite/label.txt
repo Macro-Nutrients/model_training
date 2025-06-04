@@ -1,0 +1,5 @@
+ayam_goreng
+burger
+donat
+kentang_goreng
+mie_goreng

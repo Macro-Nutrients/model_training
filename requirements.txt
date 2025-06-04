@@ -1,0 +1,13 @@
+tensorflow>=2.8
+tensorflowjs
+scikit-learn
+split-folders
+matplotlib
+seaborn
+pandas
+numpy
+Pillow
+tqdm
+opencv-python
+scikit-image
+kagglehub # Untuk mengunduh dataset dari Kaggle
