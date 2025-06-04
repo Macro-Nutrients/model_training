@@ -36,8 +36,8 @@ The model uses transfer learning with MobileNetV2 as the base model and includes
 ## Dataset
 The dataset consists of food images collected from multiple Kaggle sources:
 - [Portuguese Meals Dataset](https://www.kaggle.com/datasets/catarinaantelo/portuguese-meals)
-- [Food Classification Dataset](https://www.kaggle.com/datasets/rizkyyk/dataset-food-classification)
-- [Fast Food Classification Dataset](https://www.kaggle.com/datasets/utkarshsaxenadn/fast-food-classification-dataset)
+- [Indonesian Food Dataset](https://www.kaggle.com/datasets/rizkyyk/dataset-food-classification)
+- [Fast Food Classification Dataset - V2 | 20k Images](https://www.kaggle.com/datasets/utkarshsaxenadn/fast-food-classification-dataset)
 
 Subsequently, the researcher performed sorting and cropping on each image using an image processing application to ensure that only high-quality images were used for training. The finalized dataset was then uploaded to Google Drive and can be accessed via the following link:
 - [Final Dataset](https://drive.google.com/file/d/1WSKVHCrDwPnqFau175P5ehI-h4Glog1o/view?usp=sharing)
