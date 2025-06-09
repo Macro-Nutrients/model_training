@@ -7,10 +7,15 @@ Berdasarkan penelitian [1], penggunaan deep learning untuk klasifikasi gambar ma
 
 **Referensi:**
 [1] W. Min, S. Jiang, L. Liu, Y. Rui, and R. Jain, “A survey on food computing,” arXiv.org, Aug. 22, 2018. https://arxiv.org/abs/1808.07202
+
 [2] Lu, J., Liu, X., , X., Tong, J., & Peng, J. (2023). Improved MobileNetV2 crop disease identification model for intelligent agriculture. PeerJ Computer Science, 9. https://doi.org/10.7717/peerj-cs.1595.
+
 [3] Gulzar, Y. (2023). Fruit Image Classification Model Based on MobileNetV2 with Deep Transfer Learning Technique. Sustainability. https://doi.org/10.3390/su15031906.
+
 [4] Yong, L., , L., Sun, D., & Du, L. (2023). Application of MobileNetV2 to waste classification. PLOS ONE, 18. https://doi.org/10.1371/journal.pone.0282336.
+
 [5] Zhu, Q., Zhuang, H., Zhao, M., Xu, S., & Meng, R. (2024). A study on expression recognition based on improved mobilenetV2 network. Scientific Reports, 14. https://doi.org/10.1038/s41598-024-58736-x.
+
 
 ## Business Understanding
 
