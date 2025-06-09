@@ -6,6 +6,7 @@ Pengembangan sistem klasifikasi gambar makanan menjadi semakin penting seiring m
 Berdasarkan penelitian [1], penggunaan deep learning untuk klasifikasi gambar makanan telah menunjukkan akurasi yang tinggi dan dapat membantu dalam pemantauan asupan makanan. Model MobileNetV2 dipilih karena mampu mencapai akurasi tinggi pada berbagai tugas klasifikasi gambar, seperti deteksi penyakit tanaman, klasifikasi buah, dan pengenalan ekspresi wajah, dengan hasil yang seringkali lebih baik dari model lain yang lebih besar [2] [3] [4] [5].
 
 **Referensi:**
+
 [1] W. Min, S. Jiang, L. Liu, Y. Rui, and R. Jain, “A survey on food computing,” arXiv.org, Aug. 22, 2018. https://arxiv.org/abs/1808.07202
 
 [2] Lu, J., Liu, X., , X., Tong, J., & Peng, J. (2023). Improved MobileNetV2 crop disease identification model for intelligent agriculture. PeerJ Computer Science, 9. https://doi.org/10.7717/peerj-cs.1595.
